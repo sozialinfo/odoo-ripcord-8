@@ -3,7 +3,7 @@
     "description": "Ripoo: a PHP8 XML-RPC client handler for Odoo External API",
     "minimum-stability": "stable",
     "require": {
-        "php": ">=8.0",
+        "php": ">=7.0",
         "phpxmlrpc/polyfill-xmlrpc": "*@rc",
         "darkaonline/ripcord": "^0.1.8"
     },
