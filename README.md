@@ -1,11 +1,11 @@
-Ripoo (odoo-ripcord)
+Ripoo (odoo-ripcord-8)
 =======================
 
-Ripoo is a PHP7 XML-RPC client handler for [Odoo][1]. 
+This fork was created to make up for the lack of [XMLRPC][0] bundled with PHP 8.
 
-Forked from [robroypt/odoo-client][2], itself using [darkaonline/ripcord][3], Ripoo is a PSR-compliance edition of [ripcord][4], the library used in example in the [Odoo External API documentation for PHP][6].
+Ripoo is a PHP7 XML-RPC client handler for [Odoo][1]. Forked from [robroypt/odoo-client][2], itself using [darkaonline/ripcord][3], Ripoo is a PSR-compliance edition of [ripcord][4], the library used in example in the [Odoo External API documentation for PHP][6].
 
-This library is on [GitHub][7] and [Packagist][8].
+This library is on [GitHub][7].
 
 - [Ripoo (odoo-ripcord)](#ripoo-odoo-ripcord)
   - [Supported versions](#supported-versions)
@@ -37,7 +37,7 @@ Installation
 -----------------------
 
 ```bash
-composer require tbondois/odoo-ripcord
+composer require Sage-Goddess/odoo-ripcord-8
 ```
 
 Update
@@ -50,7 +50,7 @@ composer update
 
 - But if you want to update JUST this library :
 ```bash
-composer update tbondois/odoo-ripcord
+composer update Sage-Goddess/odoo-ripcord-8
 ```
 Add ` --with-dependencies` to also update others libraries used by this one.
 
@@ -69,7 +69,7 @@ $password = 'yourpassword';
 
 $client = new OdooClient($host, $db, $user, $password);
 ```
-- Or you can instanciate new client via ClientFactory, to centralize configuration use good Design Patterns . 
+- Or you can instantiate new client via ClientFactory, to centralize configuration use good Design Patterns . 
 
 Basic sample for Magento2 :
 
@@ -218,16 +218,15 @@ erppeek  --server=http://odoo.example.com -d your_db -u admin -p password
 your_db >>> models()
 ```
 
-
+[0]: https://php.watch/versions/8.0/xmlrpc
 [1]: https://www.odoo.com/
 [2]: https://github.com/robroypt/odoo-client
 [3]: https://github.com/DarkaOnLine/Ripcord
 [4]: https://github.com/poef/ripcord
 [6]: https://www.odoo.com/documentation/11.0/api_integration.html
 [7]: https://github.com/tbondois/odoo-ripcord
-[8]: https://packagist.org/packages/tbondois/odoo-ripcord
-[9]: https://www.odoo.com/documentation/14.0/developer/misc/api/odoo.html
+[8]: https://www.odoo.com/documentation/14.0/developer/misc/api/odoo.html
 
 License
 -----------------------
-MIT License. Copyright (c) 2018 Thomas Bondois. [See LICENSE file](LICENSE).
+MIT License. Copyright (c) 2022 Thomas Bondois with updates by Leo Fisher. [See LICENSE file](LICENSE).
